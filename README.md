@@ -304,7 +304,7 @@ docker build -f Dockerfile -t infiniflow/ragflow:nightly .
 3. Launch the dependent services (MinIO, Elasticsearch, Redis, and MySQL) using Docker Compose:
 
    ```bash
-   docker compose -f docker/docker-compose-base.yml up -d
+   docker compose -f docker/docker-compose-dev.yml up -d
    ```
 
    Add the following line to `/etc/hosts` to resolve all hosts specified in **docker/.env** to `127.0.0.1`:

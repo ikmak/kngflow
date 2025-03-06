@@ -281,7 +281,7 @@ docker build --build-arg NEED_MIRROR=1 -f Dockerfile -t infiniflow/ragflow:night
 3. 通过 Docker Compose 启动依赖的服务（MinIO, Elasticsearch, Redis, and MySQL）：
 
    ```bash
-   docker compose -f docker/docker-compose-base.yml up -d
+   docker compose -f docker/docker-compose-dev.yml up -d
    ```
 
    在 `/etc/hosts` 中添加以下代码，将 **conf/service_conf.yaml** 文件中的所有 host 地址都解析为 `127.0.0.1`：

@@ -41,7 +41,7 @@ While we also test RAGFlow on ARM64 platforms, we do not maintain RAGFlow Docker
 ```bash
 git clone https://github.com/infiniflow/ragflow.git
 cd ragflow/
-docker build --build-arg LIGHTEN=1 -f Dockerfile -t infiniflow/ragflow:nightly-slim .
+docker build --build-arg LIGHTEN=1 --build-arg NEED_MIRROR=1 -f Dockerfile -t ikmak/kngflow:$(date +"%Y%m%d%H%M%S") .
 ```
 
 
@@ -60,7 +60,7 @@ cd ragflow/
 uv run download_deps.py
 docker build -f Dockerfile.deps -t infiniflow/ragflow_deps .
 docker build -f Dockerfile -t infiniflow/ragflow:nightly .
-docker build --build-arg LIGHTEN=1 -f Dockerfile -t infiniflow/ragflow:nightly-slim .
+docker build --build-arg LIGHTEN=1 --build-arg NEED_MIRROR=1 -f Dockerfile -t ikmak/kngflow:$(date +"%Y%m%d%H%M%S") .
 ```
 
   </TabItem>
