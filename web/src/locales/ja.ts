@@ -104,10 +104,10 @@ export default {
       processDuration: '処理時間',
       progressMsg: '進行状況メッセージ',
       testingDescription:
-        '検索テストを実施して、RAGFlowがLLM向けに意図した内容を復元できるかを確認します。',
+        '検索テストを実施して、KnGがLLM向けに意図した内容を復元できるかを確認します。',
       similarityThreshold: '類似度しきい値',
       similarityThresholdTip:
-        'RAGFlowは、ユーザークエリとチャンク間の類似度スコアがこのしきい値を下回る場合、そのチャンクを結果から除外します。',
+        'KnGは、ユーザークエリとチャンク間の類似度スコアがこのしきい値を下回る場合、そのチャンクを結果から除外します。',
       vectorSimilarityWeight: 'ベクトル類似度の重み',
       vectorSimilarityWeightTip:
         'ベクトルコサイン類似度と併用する際のキーワード類似度の重みを設定します。2つの重みの合計は1.0でなければなりません。',
@@ -154,7 +154,7 @@ export default {
       cancel: 'キャンセル',
       rerankModel: 'リランキングモデル',
       rerankPlaceholder: '選択してください',
-      rerankTip: `リランキングモデルを選択しない場合、RAGFlowはデフォルトの重み付きベクトルコサイン類似度を使用します。`,
+      rerankTip: `リランキングモデルを選択しない場合、KnGはデフォルトの重み付きベクトルコサイン類似度を使用します。`,
       topK: 'トップK',
       topKTip: `Kチャンクがリランキングモデルに供給されます。`,
       delimiter: `区切り文字`,
